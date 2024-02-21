@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <title>The Box Model</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="top">
+            <h1>The Box Model</h1>
+        <div class="box-model">
+            <div class="container">
+                <p class="mar">margin</p>
+                <div class="border-container">
+                    <p class="bor">border</p>
+                    <p class="pad">padding</p>
+                    <div class="content"><p class="ctn">content</p></div>
+                </div>
+            </div>
+        </div><br>
+        </header>
+        <nav>
+            <h2>Learning Outcomes:</h2>
+            <ol type="I">
+                <li><a href="#h&w">Height & Width</a></li>
+                <li><a href="#w&b">Why Change the Box Model?</a></li>
+                <li><a href="#w&b">The New Box Model</a></li>
+            </ol>
+        </nav>
+        <hr class="custom-hr">
+        <section>
+            <h3 id="h&w">Height and Width</h3>
+            <div class="desc-1">
+                <p>An element’s content has two dimensions: a height and a <a href="#">width</a>. By default, the dimensions of an HTML box are set to hold the raw contents of the box.</p>
+            <p>The CSS <code class="code">height</code> and <code class="code">width</code> properties can be used to modify these default dimensions.</p>
+            </div>
+                <img src="images/cd-exam.png" alt="code"><br><br>
+            <div class="desc-2">
+                <p>In this example, the <code class="code">height</code> and <code class="code">width</code> of paragraph elements are set to 80 pixels and 240 pixels, respectively — the <code class="code">px</code> in the code above stands for pixels. </p>
+            <p>Pixels allow you to set the exact size of an element’s box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices — an element that fills a laptop screen will <a href="#">overflow</a> a mobile screen</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="desc-1">
+                <h3 id="w&b">Why Change the Box Model?</h3>
+                <p>The last lesson focused on the most important aspects of the box model: box dimensions, <a href="#">borders</a>, <a href="#">padding</a>, and <a href="#">margin</a>. </p>
+                <p>The <a href="#">box model</a>, however, has an awkward limitation regarding box dimensions. This limitation is best illustrated with an example.</p>
+            </div>
+            <div class="img">
+                <img src="images/cd-1.png" alt="cd1"><br>
+                <img src="images/cd-2.png" alt="cd2">
+            </div>
+        </section>
+        <section>
+            <div class="desc-1">
+                <h3>The New Box Model</h3>
+                <p>Now that you know about the new <a href="#">box model</a>, let’s actually implement it in the browser. </p>
+                <img src="images/bbx.png" alt="box-sizing">
+            </div>
+        </section>
+        <div class="fixed-img">
+            <a href="#top">
+                <img class="top" src="images/top.jpg" alt="top">
+            </a>
+        </div>
+    </body>
+</html>
