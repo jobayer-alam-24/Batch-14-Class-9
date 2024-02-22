@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff7c;
 }
@@ -96,23 +97,31 @@ nav ol li a:hover{
     border-bottom: none;
     color: rgb(13, 195, 219);
 }
-.fixed-img{
+.fixed-ico{
+    background-color: rgb(255, 68, 0);
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    opacity: 0.8;
+    left: 20px;
+    bottom: 80px;
 }
-.top{
-    width: 70px;
-    height: 70px;
+.fixed-ico:hover{
+    opacity: 1;
+    color: steelblue;
 }
 
 .main{
     box-sizing: border-box;
     padding: 25px;
-    width: 70%;
+    width: 80%;
     height: 341px;
     margin: auto;
+    border: 3px solid whitesmoke;
     border-radius: 15px;
+    margin-bottom: 65px;
     background: linear-gradient(0deg, rgba(34,193,195,1) 17%, rgba(253,187,45,1) 100%);
 }
 
@@ -142,6 +151,7 @@ nav ol li a:hover{
     color: white;
     background-color: orangered;
     font-size: 1.2rem;
+    transition: 0.5s;
     padding: 10px 25px;
 }
 .btn{
@@ -160,4 +170,64 @@ nav ol li a:hover{
     width: 400px;
     height: 300px;
     border: 5px inset yellowgreen;
+}
+.info-box{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(to right, #003973, #4b86ad);
+}
+.web-coder-logo{
+    width: 100%;
+    height: 60px;
+}
+.number{
+    color: rgb(235, 213, 19);
+    font-size: 2rem;
+}
+.number-bio{
+    color: white;
+}
+.custom-style{
+    margin-left: 3px;
+    font-size: 1.2rem;
+}
+.navigation{
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    z-index: 999;
+    box-shadow: -1px 7px 16px 0px rgba(197, 185, 185, 0.75);
+}
+.navigation .navbar{
+    margin-top: 17px;
+}
+.navigation .navbar a{
+    transition: 0.5s;
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.navigation .navbar a .fa-angle-down{
+    transition: 0.5s;
+}
+.navigation .navbar a:hover{
+    color: orangered;
+}
+.navigation .navbar a:hover .fa-angle-down{
+    transform: rotate(180deg);
 }
